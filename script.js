@@ -36,6 +36,11 @@ function submitword(e) {
     }
 }
 
+function clear() {
+    area.innerHTML = ""
+}
+
 document.getElementById("genbutton").addEventListener("click",sentence)
 document.getElementById("prebutton").addEventListener("click",presets)
+document.getElementById("clrbutton").addEventListener("click",clear)
 document.querySelectorAll(".submissions").forEach(function (textbox) {textbox.addEventListener("keyup",submitword)})
